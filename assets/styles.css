@@ -1,0 +1,15 @@
+/* styles.css 文件内容 */
+body, html {
+    background-color: #F0E4FF;
+    margin: 0; /* 移除默认的页面边距 */
+    padding: 0; /* 移除默认的页面内边距 */
+    width: 100%; /* 设置页面宽度为100% */
+    height: 100%; /* 设置页面高度为100% */
+    box-sizing: border-box; /* 包括内边距和边框在内的盒模型 */
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 100%; /* 确保app容器占据整个页面宽度 */
+}
+

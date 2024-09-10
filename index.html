@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minority Association in Computing</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/home_style/body.css">
+  <link rel="stylesheet" href="assets/home_style/footer.css">
+  <link rel="stylesheet" href="assets/home_style/header.css">
+  <!--Rubik for header and body two buttons-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Platypi:wght@800&family=Poppins&family=Raleway:ital,wght@0,300;1,300&family=Rubik:wght@500&family=Source+Code+Pro:ital@0;1&display=swap"
+    rel="stylesheet">
+  <!--2024-2025 SCHOOL YEAR-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Platypi:wght@800&family=Poppins&family=Quicksand&family=Raleway:ital,wght@0,300;1,300&family=Rubik:wght@500&family=Source+Code+Pro:ital@0;1&display=swap"
+    rel="stylesheet">
+  <!--Minority Association-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Open+Sans:ital,wght@0,700;1,700&family=Platypi:wght@800&family=Poppins&family=Quicksand&family=Raleway:ital,wght@0,300;1,300&family=Rubik:wght@500&family=Source+Code+Pro:ital@0;1&display=swap"
+    rel="stylesheet">
+  <!--P-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Moderustic:wght@500&family=Open+Sans:ital,wght@0,700;1,700&family=Platypi:wght@800&family=Poppins&family=Quicksand&family=Raleway:ital,wght@0,300;1,300&family=Rubik:wght@500&family=Source+Code+Pro:ital@0;1&display=swap"
+    rel="stylesheet">
+
+  <!--favicon-->
+  <head>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <!-- 如果使用其他格式的图标 -->
+    <link rel="icon" href="favicon/android-icon-36x36.png" type="image/png">
+    <!-- 如果希望兼容苹果设备 -->
+    <link rel="apple-touch-icon" href="favicon/apple-icon-60x60.png">
+  </head>
+</head>
+
+<body>
+  <div id="app">
+    <div class="header_div">
+      <a href="index.html">
+        <img v-bind:src="logo_image" alt="Logo_Image">
+      </a>
+      <div class="box">
+        <div class="dropdown-box">
+          <a href="about.html">
+            <button class="NormalButton">About Us</button>
+          </a>
+          <!--<div class="dropdown-content">
+              <a href="#">About MAC</a>
+              <a href="#">About E-boards</a>
+            </div>-->
+        </div>
+        <a href="gallery.html">
+          <button class="NormalButton">Gallery</button>
+        </a>
+        <a href="sponsor.html">
+          <button class="NormalButton">Sponsors</button>
+        </a>
+        <a href="join.html">
+          <button class="JoinButton">Join</button>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="text-section">
+        <h2>2024–2025 SCHOOL YEAR</h2>
+        <h1>Minority Association in<br>Computing at Pitt</h1>
+        <!--<hr>-->
+        <svg class="svg-underline relative z-10 w-64 md:w-1/2 lg:w-3/4" viewBox="0 0 422 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 9C118.957 4.47226 364.497 -1.86658 419 9" opacity="1" stroke-dashoffset="0px"
+            stroke-dasharray="416.33880615234375px 416.33880615234375px"></path>
+        </svg>
+        <p>Dedicated to nurturing diversity and inclusion in the technology field with academic, social, and
+          professional engagements.</p>
+        <div class="buttons">
+          <a href="join.html">
+            <button class="leftButton">Join the Club</button>
+          </a>
+          <a href="about.html">
+            <button class="rightButton">What We Do</button>
+          </a>
+        </div>
+      </div>
+      <div class="calendar-section">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%23ffffff&showTitle=0&showPrint=0&src=dW1jcGl0dEBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
+          style="border-width:0" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+    <!--
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%23ffffff&showTitle=0&showPrint=0&src=dW1jcGl0dEBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border-width:0" width=52.2% height="600px" frameborder="0" scrolling="no"></iframe>
+      -->
+
+    <div class="footer_div">
+
+      <div class="nav-links">
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="sponsor.html">Sponsors</a>
+        <a href="join.html">Join</a>
+      </div>
+      <div class="nav-links">
+        <a href="https://www.instagram.com/macatpitt/">
+          <img src="assets/pictures/Instagram-Icon.svg" alt="Instagram_Icon" height="30px">
+          <div class="color-overlay"></div>
+        </a>
+        <a href="https://forms.gle/Sf6uNAkAaqcZ4QDS6">
+          <img src="assets/pictures/Email_Icon.svg" alt="Email_Icon" height="30px">
+          <div class="color-overlay"></div>
+        </a>
+        <a>
+          <img src="assets/pictures/Discord_Icon.svg" alt="Discord_Icon" height="30px">
+          <div class="color-overlay"></div>
+        </a>
+      </div>
+      <div class="contact-info">
+        Email us at <a href="mailto:umcpitt@gmail.com">umcpitt@gmail.com</a>
+      </div>
+      <div class="footer">
+        Built with <span>🩷</span> by <a href="#">MAC @ Pitt</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Import app -->
+  <script src="main.js"></script>
+</body>
+
+</html>

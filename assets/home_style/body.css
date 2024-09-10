@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1500px;
+    height:65vh;
+    margin: 0 auto;
+    background-color: #F0E4FF; /* Match body background */
+}
+
+.text-section {
+    max-width: 50%;
+    margin-left: 100px;
+}
+
+.text-section h1 {
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    margin-bottom: 20px;
+    margin-top: 10px
+}
+
+.text-section h2 {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin-top: 0;
+}
+
+.text-section svg{
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    --swiper-theme-color:#F0E4FF;
+    --swiper-navigation-size: 44px;
+    font-family: inherit;
+    overflow-wrap: normal;
+    word-break: normal;
+    white-space: pre;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1;
+    fill: none;
+    border: 0 solid;
+    box-sizing: border-box;
+    --tw-border-opacity: 1;
+    border-color: rgba(229,231,235,var(--tw-border-opacity));
+    --tw-shadow: 0 0 #0000;
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    display: block;
+    position: relative;
+    z-index: 10;
+    stroke-width: 5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke: #D269E6;
+    width: 75%;
+    animation: expand 1s ease-out forwards; /* Animation to expand the width */
+}
+
+@keyframes expand {
+    0% {
+        width: 0;
+    }
+    100% {
+        width:75%; /* Final width, adjust as needed */
+    }
+}
+
+.text-section p {
+    font-size: 18px;
+    color: black;
+    line-height: 2.0;
+    width: 80%;
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px; /* Add space between buttons */
+    margin-top: 30px;
+}
+
+.buttons button {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px 30px;
+    margin-right: 40px;
+    width: 180px;
+    border: none; /* Remove border */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Keep the element inline */
+    font-size: 18px; /* Set font size */
+    border-radius: 20px; /* Make the corners rounded */
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    transition: all 0.3s ease; /* 添加过渡效果 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.leftButton {
+    color: white;
+    background-color: #D269E6;
+}
+
+.rightButton {
+    color: #D269E6;
+    background-color: white;
+}
+
+.buttons button:hover{
+    transform: scale(1.1); /* 放大按钮 */
+}
+
+.calendar-section {
+    width: 1000px;
+    background: linear-gradient(90deg, #D269E6, #a377df);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* 柔和的阴影 */
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0; /* 初始状态透明 */
+    animation: fadeIn 2s ease-in forwards; /* 2秒渐显动画 */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* 从透明开始 */
+    }
+    to {
+        opacity: 1; /* 到完全可见 */
+    }
+}
+
+.calendar-section iframe {
+    height: 500px;
+    width: 100%;
+    border: none;
+}

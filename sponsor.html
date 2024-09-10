@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/home_style/header.css">
+  <link rel="stylesheet" href="assets/home_style/footer.css">
+  <link rel="stylesheet" href="assets/sponsor_style/body.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--h3 for Name-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Platypi:wght@800&family=Poppins&family=Raleway:ital,wght@0,300;1,300&family=Rubik:wght@500&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet">
+  <!--h4 for Position-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Platypi:wght@800&family=Poppins&family=Quicksand&family=Raleway:ital,wght@0,300;1,300&family=Rubik:wght@500&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet"> 
+  <!--Join MAC at Pitt-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Open+Sans:ital,wght@0,700;1,700&family=Platypi:wght@800&family=Poppins&family=Quicksand&family=Raleway:ital,wght@0,300;1,300&family=Rubik:wght@500&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet">
+  <!--P-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Moderustic:wght@500&family=Open+Sans:ital,wght@0,700;1,700&family=Platypi:wght@800&family=Poppins&family=Quicksand&family=Raleway:ital,wght@0,300;1,300&family=Rubik:wght@500&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet">
+  <!--favicon-->
+  <head>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <!-- 如果使用其他格式的图标 -->
+    <link rel="icon" href="favicon/android-icon-36x36.png" type="image/png">
+    <!-- 如果希望兼容苹果设备 -->
+    <link rel="apple-touch-icon" href="favicon/apple-icon-60x60.png">
+  </head>
+</head>
+<body>
+  <div id="app">
+    <div id="header-placeholder"></div>
+    <main>
+        <div class="title-container">
+            <h1>Thank You Sponsors</h1>
+            <svg class="svg-underline relative z-10 w-64 md:w-1/2 lg:w-3/4" viewBox="0 0 422 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 9C118.957 4.47226 364.497 -1.86658 419 9" opacity="1" stroke-dashoffset="0px" stroke-dasharray="416.33880615234375px 416.33880615234375px"></path>
+            </svg>
+            <p class="Academic-year">2024-2025 Academic Year</p>
+        </div>
+        <div class="body_box">
+            <div class="card-container">
+                <a href="https://www.netapp.com/">
+                    <img class="NetApp" src="assets/pictures/sponsors_img/NetApp.png" alt="NetApp">
+                </a>
+                <a href="https://www.pnc.com/en/personal-banking.html">
+                    <img class="PNC" src="assets/pictures/sponsors_img/PNC.png" alt="PNC">
+                </a>
+                <a href="https://www.bnymellon.com/us/en.html">
+                  <img class="BNY" src="assets/pictures/sponsors_img/BNY.png" alt="BNY">
+                </a>
+                <a href="https://www.sheetz.com/">
+                    <img class="Sheetz" src="assets/pictures/sponsors_img/Sheetz_logo.png" alt="Sheetz">
+                </a>
+            </div>
+        </div>
+        <div class="middle_box">
+            <div class="text-section">
+                <h2>Why Sponsor Us?</h2>
+                <svg class="svg-underline relative z-10 w-64 md:w-1/2 lg:w-3/4" viewBox="0 0 470 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M275 9.00001C323.851 9.00006 37.5532 -4.49999 3.00001 8.99995" stroke="#FFB81C" stroke-width="4" stroke-linecap="round"></path>
+                </svg>
+                <p>By sponsoring us, you'll enter our contact sheet and have opportunities to connect with future tech leaders and enhance your brand's visibility on campus.</p>
+                <p>By sponsoring us, your support directly contributes to the professional growth and hands-on project experience for Pitt students from diverse group.</p>
+                <a href="mailto:umcpitt@gmail.com?subject=New Sponsor Reachout">
+                    <button>Become One of Our Sponsors Now -></button>
+                </a>
+              </div>
+            <div class="img_section">
+              <img src="assets/pictures/Sponsorship.jpg" alt="Sponsorship_IMG">
+            </div>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+  </div>
+  
+  <script>
+    fetch('header.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.text();
+      })
+      .then(data => {
+        console.log(data); // 调试信息，查看加载的 header.html 内容
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+      });
+
+      fetch('footer.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.text();
+      })
+      .then(data => {
+        console.log(data); // 调试信息，查看加载的 header.html 内容
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+      });
+  </script>
+</body>
+</html>
